@@ -2,6 +2,8 @@
 
 Modern, responsive jewelry product listing application with dynamic pricing based on real-time gold prices.
 
+Web Live Link: **https://jewelrystoreproject.onrender.com/**
+
 ## Features
 
 - **Real-time Gold Price Integration**: Dynamic pricing based on live gold market data
