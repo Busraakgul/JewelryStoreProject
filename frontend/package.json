@@ -1,0 +1,16 @@
+{
+  "name": "jewelry-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for jewelry product listing",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --open=/",
+    "build": "echo 'Frontend build complete'"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": ["jewelry", "frontend", "carousel"],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        
+        <!-- Filters -->
+        <div class="filters">
+            <div class="filter-group">
+                <label>Price Range:</label>
+                <input type="number" id="minPrice" placeholder="Min Price" min="0">
+                <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+            </div>
+            <div class="filter-group">
+                <label>Popularity:</label>
+                <input type="number" id="minPopularity" placeholder="Min (0-1)" min="0" max="1" step="0.1">
+                <input type="number" id="maxPopularity" placeholder="Max (0-1)" min="0" max="1" step="0.1">
+            </div>
+            <button id="applyFilters">Apply Filters</button>
+            <button id="clearFilters">Clear Filters</button>
+        </div>
+
+        <!-- Products Container -->
+        <div class="products-container">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="carousel">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+            </div>
+        </div>
+
+        <!-- Loading indicator -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading products...</p>
+        </div>
+
+        <!-- Error message -->
+        <div class="error" id="error" style="display: none;">
+            <p>Error loading products. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
